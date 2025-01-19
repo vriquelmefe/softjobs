@@ -12,7 +12,7 @@ const pool = new Pool({
   host: "localhost",
   database: "softjobs",
   password: process.env.DB_PASSWORD,
-  port: 5433,
+  port: 5432,
 });
 
 pool.query("SELECT NOW()", (err, res) => {
